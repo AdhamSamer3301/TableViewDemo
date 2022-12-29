@@ -19,6 +19,7 @@
 		DE66C14F295C4EC000A4B7FF /* TableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE66C14E295C4EC000A4B7FF /* TableViewDemoTests.m */; };
 		DE66C159295C4EC000A4B7FF /* TableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE66C158295C4EC000A4B7FF /* TableViewDemoUITests.m */; };
 		DE66C15B295C4EC000A4B7FF /* TableViewDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE66C15A295C4EC000A4B7FF /* TableViewDemoUITestsLaunchTests.m */; };
+		DEF1D440295DC67D00AD0184 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF1D43F295DC67D00AD0184 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		DE66C154295C4EC000A4B7FF /* TableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE66C158295C4EC000A4B7FF /* TableViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDemoUITests.m; sourceTree = "<group>"; };
 		DE66C15A295C4EC000A4B7FF /* TableViewDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		DEF1D43E295DC67D00AD0184 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		DEF1D43F295DC67D00AD0184 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				DE36B170295C679600D612D5 /* Person.m */,
 				DE36B175295C7EE500D612D5 /* TableViewController.h */,
 				DE36B176295C7EE500D612D5 /* TableViewController.m */,
+				DEF1D43E295DC67D00AD0184 /* LoginViewController.h */,
+				DEF1D43F295DC67D00AD0184 /* LoginViewController.m */,
 			);
 			path = TableViewDemo;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				DE36B177295C7EE500D612D5 /* TableViewController.m in Sources */,
 				DE66C13A295C4EBD00A4B7FF /* ViewController.m in Sources */,
 				DE66C134295C4EBD00A4B7FF /* AppDelegate.m in Sources */,
+				DEF1D440295DC67D00AD0184 /* LoginViewController.m in Sources */,
 				DE66C145295C4EBF00A4B7FF /* main.m in Sources */,
 				DE66C137295C4EBD00A4B7FF /* SceneDelegate.m in Sources */,
 			);

@@ -8,16 +8,19 @@
 #import "TableViewController.h"
 #import "ViewController.h"
 #import "Person.h"
-
+#import "LoginViewController.h"
 @interface TableViewController ()
 @property NSMutableArray *male;
 @property NSMutableArray *female;
+@property NSUserDefaults *def;
 @end
 
 @implementation TableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _def = [NSUserDefaults standardUserDefaults];
+    if([_def boolForKey:@"isLogged"]){
     _male = [NSMutableArray new];
     _female = [NSMutableArray new];
     Person *p1 = [Person new];
@@ -33,6 +36,11 @@
     [_male addObject:p2];
     [_female addObject:p3];
     [_female addObject:p4];
+    }
+    else{
+        LoginViewController *lvc = [self.storyboard instantiateViewControllerWithIdentifier:@"login"];
+        [self.navigationController pushViewController:lvc animated:YES];
+    }
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
