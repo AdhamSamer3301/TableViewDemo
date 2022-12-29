@@ -6,8 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Person.h"
 @interface ViewController : UIViewController
+
+@property Person* p;
 
 
 @end

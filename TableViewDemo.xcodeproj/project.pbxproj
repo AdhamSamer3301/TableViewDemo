@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE36B171295C679600D612D5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DE36B170295C679600D612D5 /* Person.m */; };
+		DE36B177295C7EE500D612D5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE36B176295C7EE500D612D5 /* TableViewController.m */; };
 		DE66C134295C4EBD00A4B7FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE66C133295C4EBD00A4B7FF /* AppDelegate.m */; };
 		DE66C137295C4EBD00A4B7FF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE66C136295C4EBD00A4B7FF /* SceneDelegate.m */; };
 		DE66C13A295C4EBD00A4B7FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE66C139295C4EBD00A4B7FF /* ViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE36B16F295C679600D612D5 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		DE36B170295C679600D612D5 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		DE36B175295C7EE500D612D5 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		DE36B176295C7EE500D612D5 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		DE66C12F295C4EBD00A4B7FF /* TableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE66C132295C4EBD00A4B7FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE66C133295C4EBD00A4B7FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +121,10 @@
 				DE66C140295C4EBF00A4B7FF /* LaunchScreen.storyboard */,
 				DE66C143295C4EBF00A4B7FF /* Info.plist */,
 				DE66C144295C4EBF00A4B7FF /* main.m */,
+				DE36B16F295C679600D612D5 /* Person.h */,
+				DE36B170295C679600D612D5 /* Person.m */,
+				DE36B175295C7EE500D612D5 /* TableViewController.h */,
+				DE36B176295C7EE500D612D5 /* TableViewController.m */,
 			);
 			path = TableViewDemo;
 			sourceTree = "<group>";
@@ -266,6 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE36B171295C679600D612D5 /* Person.m in Sources */,
+				DE36B177295C7EE500D612D5 /* TableViewController.m in Sources */,
 				DE66C13A295C4EBD00A4B7FF /* ViewController.m in Sources */,
 				DE66C134295C4EBD00A4B7FF /* AppDelegate.m in Sources */,
 				DE66C145295C4EBF00A4B7FF /* main.m in Sources */,
