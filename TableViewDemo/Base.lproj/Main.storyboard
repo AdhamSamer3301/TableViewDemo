@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Table Data-->
         <scene sceneID="QNn-bE-JT7">
             <objects>
                 <tableViewController storyboardIdentifier="table" id="Y3i-Iw-bLf" customClass="TableViewController" sceneMemberID="viewController">
@@ -31,7 +31,7 @@
                             <outlet property="delegate" destination="Y3i-Iw-bLf" id="bjn-FN-yRH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="S3S-bc-biK"/>
+                    <navigationItem key="navigationItem" title="Table Data" id="S3S-bc-biK"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ckq-LF-rkb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,7 +125,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5kk-1b-PaG">
-                                <rect key="frame" x="0.0" y="740" width="393" height="44"/>
+                                <rect key="frame" x="-3" y="738" width="393" height="46"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="noV-1E-Jph"/>
@@ -183,7 +183,6 @@
                         <viewLayoutGuide key="safeArea" id="n3Z-pz-beI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6SH-Th-O9F"/>
                     <connections>
                         <outlet property="pwTxtField" destination="KD1-20-pr5" id="2yR-Wr-arZ"/>
                         <outlet property="userNameTxtField" destination="waZ-Nz-sSf" id="rb5-jI-MaL"/>
