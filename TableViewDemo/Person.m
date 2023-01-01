@@ -10,10 +10,12 @@
 @implementation Person
 - (void)setFriend_WithName:(NSString *)name andEmail:(NSString *)email andAge:(int)age andPhone:(int)phone andAddress:(NSString *)address{
     
+    
     [self setAddress:address];
     [self setName:name];
     [self setEmail:email];
     [self setAge:age];
     [self setPhone:phone];
+    
 }
 @end

@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property int age;
 @property NSString *email;
 @property NSString *address;
+@property NSString *imgURL;
 
 -(void) setFriend_WithName:(NSString*)name andEmail:(NSString*)email andAge:(int)age andPhone:(int)phone andAddress:(NSString*)address;
 

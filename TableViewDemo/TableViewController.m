@@ -9,6 +9,8 @@
 #import "Person.h"
 #import "TableViewController.h"
 #import "ViewController.h"
+#import "UIImageView+WebCache.h"
+#import <SDWebImage/SDWebImage.h>
 @interface TableViewController ()
 @property NSMutableArray *male;
 @property NSMutableArray *female;
@@ -19,17 +21,14 @@
 
 - (void)returnBack {
     LoginViewController *lvc = [self.storyboard instantiateViewControllerWithIdentifier:@"login"];
-
+    self.navigationItem.backBarButtonItem.hidden = YES;
     [self.navigationController pushViewController:lvc animated:YES];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     _def = [NSUserDefaults standardUserDefaults];
-
-    UISwipeGestureRecognizer *leftswipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(returnBack)];
-    leftswipe.direction = UISwipeGestureRecognizerDirectionLeft;
-    [self.view addGestureRecognizer:leftswipe];
+    self.navigationItem.hidesBackButton = YES;
 
     if ([_def boolForKey:@"isLogged"]) {
         _male = [NSMutableArray new];
@@ -86,17 +85,24 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    
     Person *temp;
-
+    
     switch (indexPath.section) {
         case 0:
             temp = [_male objectAtIndex:indexPath.row];
             cell.textLabel.text = temp.name;
+            
+            [cell.imageView sd_setImageWithURL:[NSURL URLWithString:@"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg"] placeholderImage:[UIImage imageNamed:@"pp"]];
+            
             break;
 
         case 1:
             temp = [_female objectAtIndex:indexPath.row];
             cell.textLabel.text = temp.name;
+            
+            [cell.imageView sd_setImageWithURL:[NSURL URLWithString:@"https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png"] placeholderImage:[UIImage imageNamed:@"pp"]];
+            
             break;
     }
 
@@ -108,14 +114,16 @@
     
     ViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"view"];
     [self.navigationController pushViewController:vc animated:YES ];
-
+    
     switch (indexPath.section) {
         case 0:
             vc.p = [_male objectAtIndex:indexPath.row];
+            [vc.p setImgURL:@"https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg"];
             break;
 
         case 1:
             vc.p = [_female objectAtIndex:indexPath.row];
+            [vc.p setImgURL:@"https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png"];
             break;
     }
 }
