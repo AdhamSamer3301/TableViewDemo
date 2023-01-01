@@ -32,6 +32,10 @@
     _ageTxt.text = [NSString stringWithFormat:@"%d", [self.p age]];
     _emailTxt.text = [self.p email];
     _addressTxt.text = [self.p address];
+    _image.backgroundColor = [UIColor blueColor];
+    _image.layer.cornerRadius = 75.0;
+    _image.layer.borderColor = [UIColor blackColor].CGColor;
+    _image.layer.borderWidth = 1.5;
     NSString *url = [self.p imgURL];
     [_image sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"pp"]];
     
